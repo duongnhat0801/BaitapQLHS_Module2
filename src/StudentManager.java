@@ -7,14 +7,14 @@ public class StudentManager {
 
     public static void main(String[] args) {
         boolean exit = false;
-        for (int choice = 0; choice != 5; ) {
+        while (!exit) {
             System.out.println("Menu: ");
             System.out.println("1. Hiển thị danh sách học sinh");
             System.out.println("2. Thêm học sinh mới");
             System.out.println("3. Xoá sinh viên");
             System.out.println("4. Hiển thị danh sách học sinh có GPA > 8");
             System.out.println("Enter your choice:");
-            choice = scanner.nextInt();
+            int choice = scanner.nextInt();
             scanner.nextLine();
             switch (choice) {
                 case 1:
